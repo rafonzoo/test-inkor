@@ -11,7 +11,7 @@ const SubmitButton: FC<{ isSignedOut: boolean }> = ({ isSignedOut }) => {
   return (
     <input
       type='submit'
-      className='text-sm tracking-normal text-blue-600 text-left disabled:opacity-40'
+      className='text-sm tracking-normal text-blue-600 text-left disabled:opacity-40 cursor-pointer'
       disabled={pending || isSignedOut}
       value={
         !pending ? (isSignedOut ? 'A moment...' : 'Sign out?') : 'Signing out...'
